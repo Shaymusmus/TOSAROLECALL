@@ -52,7 +52,7 @@ client.on('interactionCreate', async (interaction) => {
     try {
       const state = await Gamedig.query({
         type: 'armareforger',
-        host: '92.118.16.142',
+        host: '92.118.16.142:2302',
         port: 2001,
         timeout: 10000
       });
