@@ -41,7 +41,7 @@ client.on('interactionCreate', async interaction => {
       const state = await Gamedig.query({
         type: 'armareforger',
         host: '92.118.16.142:2302',
-        port: 2001
+        port: 10000
       });
 
       const players = state.players.length
