@@ -1,6 +1,13 @@
+const express = require('express');
 const { Client, GatewayIntentBits, SlashCommandBuilder, REST, Routes } = require('discord.js');
 const Gamedig = require('gamedig');
 
+// ===== Render keep-alive server =====
+const app = express();
+app.get('/', (req, res) => res.send('Bot is running'));
+app.listen(10000);
+
+// ===== Discord bot setup =====
 const TOKEN = process.env.TOKEN;
 const CLIENT_ID = process.env.CLIENT_ID;
 
